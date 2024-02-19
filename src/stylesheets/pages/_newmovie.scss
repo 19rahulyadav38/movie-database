@@ -1,0 +1,134 @@
+.top-spacing {
+  padding-top: 120px;
+}
+
+.heading-two {
+  color: #fff;
+
+  /* H2 */
+  // font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+}
+.new-movie-page {
+  .input-area {
+    max-width: 362px;
+    margin-bottom: 64px;
+    .title-input {
+      width: 100%;
+    }
+    .year-input {
+      width: 241px;
+      @media screen and (max-width: $sm){
+        width: 100%;
+      }
+    }
+    .input-area-btns {
+      display: flex;
+      gap: 16px;
+    }
+    @media screen and (max-width: $sm){
+      margin-bottom: 10px !important;
+      max-width: 100% !important;
+    }
+  }
+}
+
+.file-uploader {
+  .file-uploader-area {
+    max-width: 473px;
+    position: relative;
+    label {
+      width: 473px;
+      height: 504px;
+      opacity: 0;
+      @media screen and (max-width: $sm){
+        width: 100% !important;
+        height: 100vw;
+        input{
+          width: 100%;
+        }
+      }
+    }
+    .file-uploader-layer {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: 2px dashed #fff;
+      background: $inputColor;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: -1;
+    }
+    @media screen and (max-width: $sm){
+      width: 100%;
+      height: 100vw;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+  }
+}
+
+.movie-paginate {
+  padding-top: 120px;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: #fff;
+  text-align: center;
+
+  /* Body/Regular */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  .previous {
+    margin-right: 8px;
+  }
+  .next {
+    margin-left: 8px;
+  }
+  .next,
+  .previous {
+    width: auto;
+    height: auto;
+    background: transparent;
+    &.disabled {
+      opacity: .5;
+      cursor: not-allowed;
+      a {
+        cursor: not-allowed;
+      }
+    }
+  }
+  li {
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: $bgColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.selected {
+      background: $primaryColor;
+    }
+  }
+}

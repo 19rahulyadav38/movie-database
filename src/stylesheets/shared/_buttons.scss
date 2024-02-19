@@ -1,0 +1,32 @@
+.btnPrimary {
+  color: white !important;
+  background-color: $primaryColor !important;
+  border-radius: $themeRadius !important;
+  height: 56px;
+  font-weight: 700 !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding: 15.714px 55px 15.286px 55px !important;
+  line-height: 0px !important;
+  @media screen and (max-width: $sm){
+    height: 54px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+.btnSecondary {
+  color: white !important;
+  background-color: transparent !important;
+  border-radius: $themeRadius !important;
+  height: 56px;
+  font-weight: 700 !important;
+  padding: 16px 55px !important;
+  line-height: 0px !important;
+  border: 1px solid #fff !important;
+  @media screen and (max-width: $sm){
+    height: 54px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

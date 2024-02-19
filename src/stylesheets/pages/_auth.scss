@@ -1,0 +1,22 @@
+.authorize{
+    max-width: 300px;
+    margin: auto;
+    padding-top: 20vh;
+    h1{
+        font-size: 64px;
+        font-weight: 600;
+        @media screen and (max-width: $sm){
+            font-size: 48px;
+        }
+    }
+    input[type="checkbox"]{
+        font-size: 14px;
+    }
+    &_remember{
+        text-align: center;
+        margin-bottom: 10px;
+        label{
+            font-weight: 300;
+        }
+    }
+}
